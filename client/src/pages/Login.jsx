@@ -34,7 +34,7 @@ const Login = () => {
             </span>
             <p className='flex flex-col gap-0 md:gap-4 text-4xl md:text-6xl 2xl:text-7xl font-black text-center text-blue-700'>
               {/* <span>Cloud-Based</span> */}
-              <span>Task Manager</span>
+              <span>FocusMate</span>
             </p>
 
             <div className='cell'>
@@ -54,7 +54,7 @@ const Login = () => {
                 Welcome back!
               </p>
               <p className='text-center text-base text-gray-700 '>
-                Keep all your credential safge.
+                Keep all your credential safe.
               </p>
             </div>
 
