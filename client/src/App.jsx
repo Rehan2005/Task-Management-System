@@ -6,6 +6,8 @@ import TaskDetails from "./pages/TaskDetails";
 import Tasks from "./pages/Tasks";
 import Trash from "./pages/Trash";
 import Users from "./pages/Users";
+import Home from "./pages/homepage"; // Import Home page
+import Signup from "./pages/Signup";
 import { useSelector, useDispatch } from "react-redux";
 import { useLocation } from "react-router";
 import Sidebar from "./components/Sidebar";
@@ -86,8 +88,8 @@ function App() {
   return (
     <main className="w-full min-h-screen bg-[#f3f4f6]">
       <Routes>
+        <Route path="/" element={<Home />} /> {/* Home Page Route */}
         <Route element={<Layout />}>
-          <Route path="/" element={<Navigate to="/dashboard" />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/tasks" element={<Tasks />} />
           <Route path="/completed/:status" element={<Tasks />} />
@@ -98,6 +100,7 @@ function App() {
           <Route path="/task/:id" element={<TaskDetails />} />
         </Route>
         <Route path="/log-in" element={<Login />} />
+        <Route path="/sign-up" element={<Signup />}/>
       </Routes>
       <Toaster richColors />
     </main>
