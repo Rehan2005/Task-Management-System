@@ -14,7 +14,7 @@ export const summary = {
         team: [
           {
             _id: "65c202d4aa62f32ffd1303cc",
-            name: "Codewave Asante",
+            name: "admin",
             title: "Administrator",
             role: "Admin",
             email: "admin@gmail.com",
@@ -121,7 +121,7 @@ export const summary = {
         team: [
           {
             _id: "65c202d4aa62f32ffd1303cc",
-            name: "Codewave Asante",
+            name: "admin",
             title: "Administrator",
             role: "Admin",
             email: "admin@gmail.com",
@@ -261,7 +261,7 @@ export const summary = {
           },
           {
             _id: "65c202d4aa62f32ffd1303cc",
-            name: "Codewave Asante",
+            name: "admin",
             title: "Administrator",
             role: "Admin",
             email: "admin@gmail.com",
@@ -306,7 +306,7 @@ export const summary = {
         team: [
           {
             _id: "65c202d4aa62f32ffd1303cc",
-            name: "Codewave Asante",
+            name: "admin",
             title: "Administrator",
             role: "Admin",
             email: "admin@gmail.com",
@@ -393,7 +393,7 @@ export const summary = {
         team: [
           {
             _id: "65c202d4aa62f32ffd1303cc",
-            name: "Codewave Asante",
+            name: "admin",
             title: "Administrator",
             role: "Admin",
             email: "admin@gmail.com",
@@ -480,7 +480,7 @@ export const summary = {
         team: [
           {
             _id: "65c202d4aa62f32ffd1303cc",
-            name: "Codewave Asante",
+            name: "admin",
             title: "Administrator",
             role: "Admin",
             email: "admin@gmail.com",
@@ -556,7 +556,7 @@ export const summary = {
       },
       {
         _id: "65c202d4aa62f32ffd1303cc",
-        name: "Codewave Asante",
+        name: "admin",
         title: "Administrator",
         role: "Admin",
         createdAt: "2024-02-06T09:58:44.794Z",
@@ -603,7 +603,7 @@ export const summary = {
       team: [
         {
           _id: "65c202d4aa62f32ffd1303cc",
-          name: "Codewave Asante",
+          name: "admin",
           title: "Administrator",
           email: "admin@gmail.com",
         },
@@ -705,7 +705,7 @@ export const summary = {
       team: [
         {
           _id: "65c202d4aa62f32ffd1303cc",
-          name: "Codewave Asante",
+          name: "admin",
           title: "Administrator",
           email: "admin@gmail.com",
         },
@@ -853,7 +853,7 @@ export const summary = {
         },
         {
           _id: "65c202d4aa62f32ffd1303cc",
-          name: "Codewave Asante",
+          name: "admin",
           title: "Administrator",
           email: "admin@gmail.com",
         },
@@ -896,7 +896,7 @@ export const summary = {
       team: [
         {
           _id: "65c202d4aa62f32ffd1303cc",
-          name: "Codewave Asante",
+          name: "admin",
           title: "Administrator",
           email: "admin@gmail.com",
         },
@@ -978,7 +978,7 @@ export const summary = {
       team: [
         {
           _id: "65c202d4aa62f32ffd1303cc",
-          name: "Codewave Asante",
+          name: "admin",
           title: "Administrator",
           email: "admin@gmail.com",
         },
@@ -1060,7 +1060,7 @@ export const summary = {
       team: [
         {
           _id: "65c202d4aa62f32ffd1303cc",
-          name: "Codewave Asante",
+          name: "admin",
           title: "Administrator",
           email: "admin@gmail.com",
         },
@@ -1132,7 +1132,7 @@ export const summary = {
     {
       _id: "2",
       type: "assigned",
-      activity: "task to Codewave Asante",
+      activity: "task to admin",
       date: new Date("2023-01-15").toISOString(),
       by: "Akwasi Asante",
     },
@@ -1148,14 +1148,14 @@ export const summary = {
     {
       _id: "5",
       type: "bug",
-      activity: "bug to Codewave Asante",
+      activity: "bug to admin",
       date: new Date("2023-01-15").toISOString(),
       by: "Akwasi Asante",
     },
     {
       _id: "4",
       type: "completed",
-      activity: "Codewave Asante has completed the task assigned",
+      activity: "admin has completed the task assigned",
       date: new Date("2023-01-15").toISOString(),
       by: "Akwasi Asante",
     },
