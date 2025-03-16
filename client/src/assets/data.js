@@ -192,7 +192,7 @@ export const summary = {
       },
       {
         _id: "65c45fb6af6ec0118be94052",
-        title: "Task Manager Youtube Video",
+        title: "Task Manager Application",
         date: "2024-02-11T00:00:00.000Z",
         priority: "medium",
         stage: "completed",
