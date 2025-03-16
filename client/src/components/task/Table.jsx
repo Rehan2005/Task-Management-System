@@ -108,13 +108,13 @@ const Table = ({ tasks }) => {
 
       <td className='py-2 flex gap-2 md:gap-4 justify-end'>
         <Button
-          className='text-blue-600 hover:text-blue-500 sm:px-0 text-sm md:text-base'
+          className='text-blue-600 hover:text-blue-500 sm:px-0 text-sm md:text-base bg-white hover:bg-gray-100'
           label='Edit'
           type='button'
         />
 
         <Button
-          className='text-red-700 hover:text-red-500 sm:px-0 text-sm md:text-base'
+          className='text-red-700 hover:text-red-500 sm:px-0 text-sm md:text-base bg-white hover:bg-gray-100'
           label='Delete'
           type='button'
           onClick={() => deleteClicks(task._id)}

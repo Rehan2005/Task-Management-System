@@ -118,7 +118,7 @@ const AddTask = ({ open, setOpen }) => {
                 <Button
                   label='Submit'
                   type='submit'
-                  className='bg-blue-600 px-8 text-sm font-semibold text-white hover:bg-blue-700  sm:w-auto'
+                  className='bg-blue-600 px-8 text-sm font-semibold hover:bg-blue-700  sm:w-auto'
                 />
               )}
 

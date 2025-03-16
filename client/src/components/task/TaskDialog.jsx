@@ -40,7 +40,7 @@ const TaskDialog = ({ task }) => {
     {
       label: "Duplicate",
       icon: <HiDuplicate className='mr-2 h-5 w-5' aria-hidden='true' />,
-      onClick: () => duplicateHanlder(),
+      onClick: () => duplicateHandler(),
     },
   ];
 
@@ -48,9 +48,9 @@ const TaskDialog = ({ task }) => {
     <>
       <div>
         <Menu as='div' className='relative inline-block text-left'>
-          <Menu.Button className='inline-flex w-full justify-center rounded-md px-4 py-2 text-sm font-medium text-gray-600 '>
+          <MenuButton className='inline-flex w-full justify-center rounded-md px-4 py-2 text-sm font-medium text-gray-600 '>
             <BsThreeDots />
-          </Menu.Button>
+          </MenuButton>
 
           <Transition
             as={Fragment}
@@ -86,7 +86,7 @@ const TaskDialog = ({ task }) => {
                     <button
                       onClick={() => deleteClicks()}
                       className={`${
-                        active ? "bg-blue-500 text-white" : "text-red-900"
+                        active ? "text-black" : "text-gray-900"
                       } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                     >
                       <RiDeleteBin6Line

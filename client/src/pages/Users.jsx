@@ -70,14 +70,14 @@ const Users = () => {
 
       <td className='p-2 flex gap-4 justify-end'>
         <Button
-          className='text-blue-600 hover:text-blue-500 font-semibold sm:px-0'
+          className='text-blue-600 hover:text-blue-500 font-semibold sm:px-0 bg-white hover:bg-gray-100'
           label='Edit'
           type='button'
           onClick={() => editClick(user)}
         />
 
         <Button
-          className='text-red-700 hover:text-red-500 font-semibold sm:px-0'
+          className='text-red-700 hover:text-red-500 font-semibold sm:px-0 bg-white hover:bg-gray-100'
           label='Delete'
           type='button'
           onClick={() => deleteClick(user?._id)}
