@@ -36,7 +36,7 @@ const ICONS = {
 const bgColor = {
   high: "bg-red-200",
   medium: "bg-yellow-200",
-  low: "bg-blue-200",
+  low: "bg-blue-200", 
 };
 
 const TABS = [
@@ -88,9 +88,11 @@ const act_types = [
 
 const TaskDetails = () => {
   const { id } = useParams();
-
+  const defaultTaskId = "1"; // Set a default ID
+  const taskId = id || defaultTaskId; 
+  // const task = tasks.find((t) => t.id === taskId) || tasks[0];
   const [selected, setSelected] = useState(0);
-  const task = tasks[3];
+  const task = tasks[2];
 
   return (
     <div className='w-full flex flex-col gap-3 mb-4 overflow-y-hidden'>
@@ -235,13 +237,16 @@ const Activities = ({ activity, id }) => {
 
   const handleSubmit = async () => {};
 
-  const Card = ({ item }) => {
+  const Card = ({ item,isConnected }) => {
     return (
-      <div className='flex space-x-4'>
-        <div className='flex flex-col items-center flex-shrink-0'>
+      <div className='flex space-x-4 relative'>
+        <div className='flex flex-col items-center flex-shrink-0 relative'>
           <div className='w-10 h-10 flex items-center justify-center'>
             {TASKTYPEICON[item?.type]}
           </div>
+          {isConnected && (
+            <div className="absolute top-10 left-1/2 w-[2px] h-full bg-gray-300"></div>
+          )}
           <div className='w-full flex items-center'>
             <div className='w-0.5 bg-gray-300 h-full'></div>
           </div>
@@ -250,7 +255,7 @@ const Activities = ({ activity, id }) => {
         <div className='flex flex-col gap-y-1 mb-8'>
           <p className='font-semibold'>{item?.by?.name}</p>
           <div className='text-gray-500 space-y-2'>
-            <span className='capitalize'>{item?.type}</span>
+            <span className='capitalize'>{item?.type} </span>
             <span className='text-sm'>{moment(item?.date).fromNow()}</span>
           </div>
           <div className='text-gray-700'>{item?.activity}</div>
