@@ -21,15 +21,16 @@ const Login = () => {
     console.log("submit");
   };
 
-  const loginAsTestUser = () => {
-    dispatch(
-      setCredentials({
-        id: "123",
-        name: "Rehan Hussain",
-        email: "rehan.huss@example.com",
-        token: "dummy-token-123456",
-      })
-    );
+  const loginAsTestUser = (role) => {
+    const dummyUser = {
+      id: role === "admin" ? "999" : "123",
+      name: role === "admin" ? "Admin User" : "Rehan Hussain",
+      email: role === "admin" ? "admin@example.com" : "rehan.huss@example.com",
+      token: role === "admin" ? "admin-token-999999" : "dummy-token-123456",
+      role, // Add user role
+    };
+  
+    dispatch(setCredentials(dummyUser));
     navigate("/dashboard"); // Redirect after login
   };
 
@@ -107,6 +108,14 @@ const Login = () => {
                 onClick={loginAsTestUser}
                 label="Login as Test User"
                 className="w-full h-10 bg-gray-500 text-white rounded-full mt-2"
+              />
+
+              {/* Login as Admin Button */}
+              <Button
+                type="button"
+                onClick={() => loginAsTestUser("admin")}
+                label="Login as Admin"
+                className="w-full h-10 bg-red-500 text-white rounded-full mt-2"
               />
             </div>
 
