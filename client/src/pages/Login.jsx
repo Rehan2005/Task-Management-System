@@ -29,7 +29,6 @@ const Login = () => {
       token: role === "admin" ? "admin-token-999999" : "dummy-token-123456",
       role, // Add user role
     };
-  
     dispatch(setCredentials(dummyUser));
     navigate("/dashboard"); // Redirect after login
   };
@@ -105,7 +104,7 @@ const Login = () => {
               {/* Login as Test User Button */}
               <Button
                 type="button"
-                onClick={loginAsTestUser}
+                onClick={() => loginAsTestUser("user")}
                 label="Login as Test User"
                 className="w-full h-10 bg-gray-500 text-white rounded-full mt-2"
               />
